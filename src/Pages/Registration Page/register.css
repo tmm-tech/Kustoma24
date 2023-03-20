@@ -1,0 +1,54 @@
+.register-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 50%;
+    height: 150vh;
+    position: absolute;
+    top: -110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -110px;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(13.05deg);
+}
+
+.right-side {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    border: none;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side::-webkit-scrollbar {
+    width: 10px;
+}
+
+.right-side::-webkit-scrollbar-thumb {
+    background-color: #2A3F54;
+    border-radius: 20px;
+}
+
+.right-side::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.image-logo {
+    transform: rotate(-13deg);
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 25%;
+}

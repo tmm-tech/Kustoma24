@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Montserrat:400,700");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin-top: 60px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.path {
+    text-align: start;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    font-style: normal;
+    color: black;
+    letter-spacing: 0.01em;
+}
+
+.title {
+    text-align: start;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+.profile-settings-container {
+    display: flex;
+    padding-top: 130px 50px 50px 50px;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-settings {
+    width: 100%;
+    max-width: 65vw;
+    margin-right: 20px;
+}
+
+.profile-settings h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-settings form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-settings label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-settings input {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-settings input:focus {
+    border: 2px solid #ccc;
+}
+
+.profile-settings button {
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.wrap_button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.profile-settings button[type="submit"] {
+    background-color: #2A3F54;
+}
+
+.profile-settings button[type="button"] {
+    background-color: #f44336;
+}
+
+.navigation {
+    max-width: 200px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wrap_input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text_layout {
+    width: 70%;
+    border: 1px solid #ccc;
+}
+
+input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.display-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.display-confirm input[type='password'] {
+    width: 100%;
+}
+
+.wrap_password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.wrap_password input[type='password'] {
+    width: 100%;
+}
+
+.wrap_password .password-strength {
+    width: 100%;
+}
+
+.profile-image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-image i {
+    font-size: 150px;
+    color: #c2c2c2;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.camera-icon i {
+    font-size: 20px;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+#file-input {
+    display: none;
+}

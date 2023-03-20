@@ -1,0 +1,41 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 50%;
+    height: 130vh;
+    position: absolute;
+    top: -110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -110px;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(13.05deg);
+}
+
+.right-side {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-y: hidden;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    transform: rotate(-13deg);
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 25%;
+}
