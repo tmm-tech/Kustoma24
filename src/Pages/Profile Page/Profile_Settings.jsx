@@ -47,10 +47,6 @@ function ProfileSettings() {
       full_name: '',
       phone_number: '',
       passwords: '',
-      location: '',
-      address1: '',
-      address2: '',
-      zipCode: '',
       confirmpassword: '',
       profile: null
     });
@@ -155,22 +151,6 @@ function ProfileSettings() {
                   <input type="tel" id="phone_number" value={formdata.phone_number} onChange={handleInputChange} />
                 </div>
                 <div className="wrap_input">
-                  <label htmlFor="location">Location</label>
-                  <input type="text" id="location" value={formdata.location} onChange={handleInputChange} />
-                </div>
-                <div className="wrap_input">
-                  <label htmlFor="address1">Address line 1</label>
-                  <input type="text" id="address1" value={formdata.address1} onChange={handleInputChange} />
-                </div>
-                <div className="wrap_input">
-                  <label htmlFor="address2">Address line 2 (Optional)</label>
-                  <input type="text" id="address2" value={formdata.address2} onChange={handleInputChange} />
-                </div>
-                <div className="wrap_input">
-                  <label htmlFor="zipCode">Zip code</label>
-                  <input type="text" id="zipCode" value={formdata.zipCode} onChange={handleInputChange} />
-                </div>
-                <div className="wrap_input">
                   <label htmlFor="oldPassword">Current Password</label>
                   <input
                     type="password"
@@ -196,7 +176,7 @@ function ProfileSettings() {
                         <div className="progress-bar">
                           <div
                             className="progress"
-                            style={{ width: `${passwordStrength}%` }}
+                            style={{ width: `${passwordStrength}%`,backgroundColor:'#2A3F54' }}
                           />
                         </div>
                       </div>

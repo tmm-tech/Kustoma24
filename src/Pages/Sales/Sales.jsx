@@ -116,13 +116,17 @@ function getCustomerName(customer_id){
           </table>
           <div className='pagination'>
             Show {currentPage} of {totalPages} Pages
-            <div>
-              {currentPage > 1 && <button onClick={handlePrevPage}>Previous</button>}
-              {currentPage < totalPages && <button onClick={handleNextPage}>Next</button>}
+            <div className='buttonpage'>
+              <button onClick={handlePrevPage} disabled={currentPage <= 1} className={currentPage <= 1 ? "disabled" : ""}>
+                Previous
+              </button>
+              <button onClick={handleNextPage} disabled={currentPage >= totalPages} className={currentPage >= totalPages ? "disabled" : ""}>
+                Next
+              </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </Navigation>
   );

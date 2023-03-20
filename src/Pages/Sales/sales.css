@@ -93,7 +93,9 @@
 .sales-page th {
     text-align: left;
     background-color: #eee;
+    color: black;
     padding: 0.5rem;
+    border: none;
     font-size: 1rem;
 }
 
@@ -105,6 +107,7 @@
 .sales-page td {
     padding: 0.5rem;
     margin-top: 10px;
+    border: none;
     border-bottom: 1px solid #ccc;
 }
 
@@ -113,6 +116,12 @@
     width: 50px;
     height: 50px;
     margin-right: 1rem;
+}
+
+.sales-page .product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .sales-page tbody tr:last-child td {
@@ -127,8 +136,9 @@
 }
 
 .sales-page .pagination button {
-    margin: 0;
+    margin-left: 10px;
     padding: 0.5rem;
+    width: 100px;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
     font-size: 1rem;
@@ -138,8 +148,12 @@
 }
 
 .sales-page .pagination button[disabled] {
-    opacity: 0.5;
-    cursor: default;
+    color: gray;
+    background-color: lightgray;
+    border-color: gray;
+    cursor: not-allowed;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 td.method {

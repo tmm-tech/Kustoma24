@@ -34,271 +34,41 @@
     line-height: 20px;
 }
 
-
-/* Report page container */
-
-.report-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+.filter-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-
-/* Report type selector */
-
-.report-type-selector {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.report-type-selector button {
-    padding: 10px;
-    margin: 0 10px;
-    font-size: 16px;
-    border-radius: 5px;
+.filter-dropdown button {
+    background-color: transparent;
     border: none;
-    background-color: #ccc;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
     cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    transition: background-color 0.2s;
 }
 
-.report-type-selector button.active {
-    background-color: #333;
-    color: #fff;
+.filter-dropdown button:hover {
+    background-color: #f7f7f7;
 }
-
-
-/* Chart container */
 
 .chart-container {
-    width: 80%;
-    height: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-
-/* Chart title */
-
-.chart-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-/* Table container */
-
-.table-container {
-    width: 80%;
-}
-
-
-/* Table */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th,
-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-table th {
-    background-color: #333;
-    color: #fff;
-}
-
-
-/* Table footer */
-
-.table-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Table footer item */
-
-.table-footer-item {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-/* Table footer item icon */
-
-.table-footer-item i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-
-/* Table footer item value */
-
-.table-footer-item span {
-    font-size: 20px;
-}
-
-
-/* Report page container */
-
-.report-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-
-/* Report type selector */
-
-.report-type-selector {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.report-type-selector button {
-    padding: 10px;
-    margin: 0 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-.report-type-selector button.active {
-    background-color: #333;
-    color: #fff;
-}
-
-
-/* Chart container */
-
-.chart-container {
-    width: 80%;
-    height: 400px;
-    margin-bottom: 20px;
-}
-
-
-/* Chart title */
-
-.chart-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-/* Table container */
-
-.table-container {
-    width: 80%;
-}
-
-
-/* Table */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th,
-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-table th {
-    background-color: #333;
-    color: #fff;
-}
-
-
-/* Table footer */
-
-.table-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Table footer item */
-
-.table-footer-item {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-/* Table footer item icon */
-
-.table-footer-item i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-
-/* Table footer item value */
-
-.table-footer-item span {
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-table th {
-    background-color: #333;
-    color: #fff;
-}
-
-
-/* Table footer */
-
-.table-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Table footer item */
-
-.table-footer-item {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-/* Table footer item icon */
-
-.table-footer-item i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-
-/* Table footer item value */
-
-.table-footer-item span {
-    font-size: 20px;
+.summary-table-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
