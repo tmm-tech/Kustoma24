@@ -14,14 +14,14 @@ a {
 .login100-form {
     width: 100%;
     max-width: 90vw;
-    height: 180vh;
+    height: 220vh;
     border: none;
     overflow-x: hidden;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 490px 55px 55px 55px;
+    padding: 600px 55px 55px 55px;
 }
 
 a:focus {
@@ -170,7 +170,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    width: 550px;
+    width: 600px;
     justify-content: center;
     height: 80px;
     position: relative;
@@ -208,13 +208,14 @@ label {
     padding: 0 26px;
 }
 
-input.input100 {
+
+/* input.input100 {
     height: 100%;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-}
+} */
 
 
 /*---------------------------------------------*/

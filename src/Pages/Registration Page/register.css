@@ -21,6 +21,7 @@
 
 .right-side {
     width: 50%;
+    height: 100vh;
     position: absolute;
     right: 0;
     border: none;

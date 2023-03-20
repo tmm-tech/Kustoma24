@@ -101,7 +101,7 @@ function LoginForm() {
         <span className="label-input100">Email</span>
       </div>
       <div className={`wrap-input100 validate-input ${passwordError ? 'alert-validate' : 'has-valid-input'}`} data-validate={passwordError}>
-        <input type="password" name="passwords" className="input100" onChange={handleChange} value={formData.passwords} ref={(el) => (inputRefs.current[1] = el)} onBlur={handleBlur(1)} />
+        <input type="password" name="passwords" style={{width:'100%'}} className="input100" onChange={handleChange} value={formData.passwords} ref={(el) => (inputRefs.current[1] = el)} onBlur={handleBlur(1)} />
         <span className="focus-input100"></span>
         <span className="label-input100">Password</span>
       </div>

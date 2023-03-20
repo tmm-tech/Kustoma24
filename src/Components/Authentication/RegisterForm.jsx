@@ -263,13 +263,13 @@ function RegisterForm() {
       </div>
       <div className={`wrap-input100 validate-input ${formErrors.passwords ? 'alert-validate' : 'has-valid-input'}`}
         data-validate={formErrors.passwords}>
-        <input className="input100" type="password" name="passwords" value={formData.passwords} onChange={handleInputChange} ref={(el) => (inputRefs.current[4] = el)} onBlur={handleBlur(4)} />
+        <input className="input100" type="password" name="passwords" style={{width:'100%'}} value={formData.passwords} onChange={handleInputChange} ref={(el) => (inputRefs.current[4] = el)} onBlur={handleBlur(4)} />
         <span className="focus-input100"></span>
         <span className="label-input100">Password</span>
       </div>
       <div className={`wrap-input100 validate-input ${formErrors.confirmpassword ? 'alert-validate' : 'has-valid-input'}`}
         data-validate={formErrors.confirmpassword}>
-        <input className="input100" type="password" name="confirmpassword" value={formData.confirmpassword} onChange={handleInputChange} ref={(el) => (inputRefs.current[5] = el)} onBlur={handleBlur(5)} />
+        <input className="input100" type="password"style={{width:'100%'}}  name="confirmpassword" value={formData.confirmpassword} onChange={handleInputChange} ref={(el) => (inputRefs.current[5] = el)} onBlur={handleBlur(5)} />
         <span className="focus-input100"></span>
         <span className="label-input100">Confirm Password</span>
       </div>
