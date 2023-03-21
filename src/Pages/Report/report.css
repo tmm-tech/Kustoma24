@@ -34,41 +34,59 @@
     line-height: 20px;
 }
 
-.filter-dropdown {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.filter-dropdown button {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 14px;
-    color: #666;
-    transition: background-color 0.2s;
-}
-
-.filter-dropdown button:hover {
-    background-color: #f7f7f7;
+.sales-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .chart-container {
-    padding: 20px;
+    width: 80%;
+    height: 500px;
+    margin-top: 50px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .summary-table-container {
+    width: 80%;
+    margin-top: 50px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.table-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row p {
+    font-size: 16px;
+    margin: 0;
 }

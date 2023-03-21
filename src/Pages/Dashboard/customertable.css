@@ -1,0 +1,53 @@
+.customer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.customer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.customer-info .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.customer-info .email {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.customer-info .points {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gold-medal {
+    color: #ffd700;
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.silver-medal {
+    color: #c0c0c0;
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.bronze-medal {
+    color: #cd7f32;
+    font-size: 24px;
+    margin-left: auto;
+}

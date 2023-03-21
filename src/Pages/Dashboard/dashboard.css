@@ -8,8 +8,23 @@
 .container {
     background-color: #fff;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
+    z-index: 0;
     height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2A3F54;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 20px;
 }
 
 .path {
@@ -27,7 +42,7 @@
     display: flex;
     margin-top: 60px;
     flex-direction: column;
-    height: 900px;
+    height: 100vh;
 }
 
 .Top_Dashboard {
@@ -35,81 +50,257 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #f2f2f2;
 }
 
 .top {
-    width: 200px;
-    height: 150px;
-    display: flex;
+    width: 223px;
+    height: 137px;
     border-radius: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
     background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top .top-side {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item1 .icon-container {
+    background-color: #135ca9;
+    color: #172d44;
+}
+
+.item1 .progress-level {
+    width: 70%;
+    background-color: #172d44;
+}
+
+.item2 .icon-container {
+    background-color: rgba(34, 204, 98, 0.59);
+    color: #22cc62;
+}
+
+.item2 .progress-level {
+    width: 70%;
+    background-color: #22cc62;
+}
+
+.item3 .icon-container {
+    background-color: #1AB2E8;
+    color: #005776;
+}
+
+.item3 .progress-level {
+    width: 70%;
+    background-color: #005776;
+}
+
+.item4 .icon-container {
+    background-color: rgba(255, 184, 0, 0.54);
+    color: #FFB800;
+}
+
+.item4 .progress-level {
+    width: 70%;
+    background-color: #FFB800;
+}
+
+.top .top-side .icon-container {
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31.05px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.top .top-side .InfoContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.info-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.progress {
+    width: 200px;
+    height: 3px;
+    background-color: #d9d9d9;
+    margin-top: 20%;
+    border-radius: 10px;
+}
+
+.bottom-side {
+    width: 200px;
+    display: flex;
+    position: absolute;
+    margin-bottom: -80px;
+    align-items: flex-start;
+    text-align: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.bottom-side .text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.bottom-side .percentage {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.bottom-side .icon {
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.item1 .bottom-side .icon,
+.item3 .bottom-side .icon {
+    color: #22CC62;
+}
+
+.item1 .bottom-side .percentage,
+.item3 .bottom-side .percentage {
+    color: #22CC62;
+}
+
+.item2 .bottom-side .percentage,
+.item4 .bottom-side .percentage {
+    color: #FF0000;
+}
+
+.item2 .bottom-side .icon,
+.item4 .bottom-side .icon {
+    color: #FF0000;
+}
+
+.info-amount {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
 }
 
 .Middle_Dashboard {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 16px;
-    background-color: #f2f2f2;
 }
 
 .middle-item1 {
-    grid-column: 1 / span 2;
-    height: 400px;
+    grid-column: 1 / span 3;
+    height: 597px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .Second-Container {
-    grid-column: 3;
-    height: 400px;
+    grid-column: 4;
+    height: 597px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #f2f2f2;
 }
 
-.middle-item2,
+.middle-item2 {
+    height: 60%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .middle-item3 {
     height: 50%;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.Bottom_Dashboard {
     display: flex;
-    flex-direction: row;
-    gap: 16px;
-    padding: 16px;
-    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .bottom-item1 {
-    flex: 1;
-    width: 500px;
-    height: 120px;
+    grid-column: 1 /span 2;
+    height: 419px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 .bottom-item2 {
-    flex: 1;
-    width: 500px;
-    height: 120px;
+    grid-column: 3 /span 2;
+    height: 419px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
