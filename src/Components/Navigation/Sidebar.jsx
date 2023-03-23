@@ -20,7 +20,7 @@ function Sidebar() {
                 </div>
             }
             <div className='user-info'>
-                <img src={user} alt='kastoma24' />
+                <Link to='/profile' title='Profile'><img src={user} alt='kastoma24' /></Link>
                 <span className='info-text' style={{ display: isExpanded ? 'none' : 'inline' }}>
                     Welcome
                     <br />
@@ -66,10 +66,10 @@ function Sidebar() {
                 </li>
             </ul>
             <div className={`side-nav-bottom ${isExpanded ? '' : 'expanded'}`}>
-                <Link to='/profile'><FaCog /></Link>
-                <Link to='#'><FaExpandArrowsAlt /></Link>
-                <Link to='#'><FaBell complete /></Link>
-                <Link to='/login'><FaPowerOff /></Link>
+                <Link to='/profile' title='Profile'><FaCog /></Link>
+                <Link to='#' title='Full screen'><FaExpandArrowsAlt /></Link>
+                <Link to='#' title='Notifications'><FaBell complete /></Link>
+                <Link to='/login' title='Log Out'><FaPowerOff /></Link>
             </div>
             <div className="toggle-btn" onClick={handleToggle}>
                 {isExpanded ? <i className="fa fa-bars"></i> : <i className="fa fa-close"></i>}

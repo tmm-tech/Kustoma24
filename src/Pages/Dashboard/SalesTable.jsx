@@ -1,11 +1,10 @@
 import React from 'react';
-import { sales } from '../../DummyData';
 import './salestable.css';
-const SalesTable = () => {
+const SalesTable = ({sales}) => {
     // sort sales data by total price in descending order
     const sortedData = sales.sort((a, b) => b.total_price - a.total_price);
     // take the top 10 products
-    const top10Products = sortedData.slice(0, 10);
+    const top5Products = sortedData.slice(0, 5);
 
     return (
         <table>
@@ -19,14 +18,14 @@ const SalesTable = () => {
                 </tr>
             </thead>
             <tbody>
-                {top10Products.map(product => (
+                {top5Products.map(product => (
                     <tr key={product.id}>
                         <td>
-                            <img src={product.product_image} alt={product.product_name} />
+                            <img className="product" src={product.product_image} alt={product.product_name} />
                             {product.product_name}
                         </td>
                         <td>{product.price}</td>
-                        <td>{product.discount}%</td>
+                        <td>{product.discount}</td>
                         <td>{product.quantity}</td>
                         <td>{product.total_price}</td>
                     </tr>

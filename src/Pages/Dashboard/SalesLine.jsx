@@ -2,7 +2,7 @@ import React,{useRef,useEffect} from 'react'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
-const SalesAnalysis = ({ data }) => {
+const SalesLine = ({ data }) => {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -11,9 +11,9 @@ const SalesAnalysis = ({ data }) => {
     }
   }, [data]);
 
-  const Baroptions = {
+  const Areaoptions = {
     chart: {
-      type: 'column'
+      type: 'area'
     },
     title: {
       text: 'Monthly Sales Analysis'
@@ -38,19 +38,19 @@ const SalesAnalysis = ({ data }) => {
       {
         name: 'Complete',
         color: '#2A3F54',
-        pointWidth:10,
+        pointWidth:20,
         data: data.filter((sale) => sale.status === 'complete').map((sale) => sale.price)
       },
       {
         name: 'Pending',
         color: '#FFB800',
-        pointWidth:10,
+        pointWidth:20,
         data: data.filter((sale) => sale.status === 'pending').map((sale) => sale.price)
       },
       {
         name: 'Refunded',
         color: '#D9534F',
-        pointWidth:10,
+        pointWidth:20,
         data: data.filter((sale) => sale.status === 'refunded').map((sale) => sale.price)
       }
     ]
@@ -58,9 +58,9 @@ const SalesAnalysis = ({ data }) => {
 
   return (
     <>
-    <HighchartsReact highcharts={Highcharts} options={Baroptions} />
+    <HighchartsReact highcharts={Highcharts} options={Areaoptions} />
     </>
 
   );
 };
-export default SalesAnalysis;
+export default SalesLine;

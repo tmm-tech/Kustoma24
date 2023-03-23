@@ -10,7 +10,7 @@ function TopNav() {
     <nav className='top-nav'>
     <div className='user-info'>
         <FaBell />
-        <Link to='/profile'><img className='user-image' src={user} alt='User Avatar' /></Link>
+        <Link to='/profile' title='Profile'><img className='user-image' src={user} alt='User Avatar' /></Link>
         <div className='user-details'>
             <div className='user-name'>Tony Mwangi</div>
             <div className='user-role'>
