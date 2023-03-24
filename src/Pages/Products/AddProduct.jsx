@@ -2,27 +2,39 @@ import React, { useState } from 'react';
 import './products.css'
 import { FaFilter } from 'react-icons/fa';
 import { categories } from '../../DummyData';
+import {storage} from '../../Components/Firebase/firebase';
+import {ref, uploadBytes, getDownloadURL} from 'firebase/storage'
 import Navigation from '../../Components/Navigation/Navigation';
+import {v4} from "uuid";
 function AddProduct({onAddProduct}) {
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState(null);
 
   const onSubmit = (e) => {
     e.preventDefault();
+    const imageRef = ref(storage, `Profile/${image.name + v4()}`);
+    uploadBytes(imageRef,image).then (()=>{
+      console.log('Uploaded')
+      getDownloadURL(imageRef).then((url)=>{
     const product = {
       title,
       price: Number(price),
       description,
       category,
-      image,
-      rating: { rate: 0, count: 0 },
+      url,
+      rate: 0, 
+      count: 0,
       createdAt: new Date().toISOString()
     };
-    window.location.href="/products";
-    onAddProduct(product);
+
+    console.log(product)
+  })
+})
+    // window.location.href="/products";
+    // onAddProduct(product);
     setTitle('');
     setPrice('');
     setDescription('');
@@ -30,8 +42,8 @@ function AddProduct({onAddProduct}) {
     setImage('');
   };
   const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    setImage(file);
+    setImage(e.target.files[0]);
+      
   };
   const handleCategoryChange=(e)=>{
     const category=e.target.value;
@@ -76,7 +88,7 @@ function AddProduct({onAddProduct}) {
             </div>
             <div>
               <label>Image URL:</label>
-              <input type="file" onChange={handleImageUpload} required />
+              <input type="file" value={image} onChange={handleImageUpload} required />
             </div>
             <button type="submit">Add Product</button>
           </form>

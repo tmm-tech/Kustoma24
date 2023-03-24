@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
+import {storage} from '../Firebase/firebase';
+import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
+import {v4} from "uuid";
 import './utils.css';
 function RegisterForm() {
   const inputRefs = useRef([]);
@@ -29,12 +32,16 @@ function RegisterForm() {
   const handleImageSelect = (event) => {
     const selectedImage = event.target.files[0];
     console.log(selectedImage)
-    if (selectedImage) {
+      const imageRef = ref(storage, `Profile/${selectedImage.name + v4()}`);
+      uploadBytes(imageRef,selectedImage).then (()=>{
+        console.log('Uploaded')
+        getDownloadURL(imageRef).then((url)=>{
+          setFormData({
+            ...formData, [event.target.name]: event.target.value, profile:url
+          });
+        })
+      })
       setImage(URL.createObjectURL(selectedImage));
-      setFormData({
-        ...formData, [event.target.name]: event.target.value
-      });
-    }
 
   };
   const validateFullName = (full_name) => {

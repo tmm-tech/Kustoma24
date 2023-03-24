@@ -7,7 +7,7 @@ const SalesTable = ({sales}) => {
     const top5Products = sortedData.slice(0, 5);
 
     return (
-        <table>
+        <table className='sales_table'>
             <thead>
                 <tr>
                     <th>Product Name</th>
@@ -17,7 +17,7 @@ const SalesTable = ({sales}) => {
                     <th>Total Price</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className='sales_body'>
                 {top5Products.map(product => (
                     <tr key={product.id}>
                         <td>

@@ -8,7 +8,7 @@ function CustomerTable({ customer }) {
   const top5customers = sortedData.slice(0, 5);
 
   return (
-    <table>
+    <table className='customer_table'>
       <thead>
         <tr>
           <th>Customer</th>
@@ -16,7 +16,7 @@ function CustomerTable({ customer }) {
           <th>Loyalty Points</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className='customer_body'>
         {top5customers.map((customer, index) => (
           <tr key={customer.id}>
             <td>
