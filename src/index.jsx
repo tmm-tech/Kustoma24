@@ -8,11 +8,16 @@ import Error404 from './Pages/Error Page/404';
 import Error500 from './Pages/Error Page/500';
 import Error503 from './Pages/Error Page/503';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 import userReducer from './Components/Redux/userReducer';
+import { createStore, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
 
 
-const store = createStore(userReducer);
+const store = createStore(
+  userReducer,
+  applyMiddleware(thunkMiddleware)
+);
+
 
 class ErrorBoundary extends React.Component {
   constructor(props) {

@@ -1,16 +1,15 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React,{useState} from 'react';
+import React from 'react';
 import Navigation from '../../Components/Navigation/Navigation';
 import './profile.css';
 import {Link} from 'react-router-dom'
 import userprofile from '../../Assets/kasper-rasmussen-ecryPq45-_g-unsplash.jpg'
-import profile from '../../Assets/img.jpg';
 import { activities } from '../../DummyData';
 import LoadingPage from '../../Components/Loading/LoadingPage';
 import { useSelector } from 'react-redux';
 function Profile() {
-  const [users, setUsers]=useState(null);
-   setUsers(useSelector(state => state.user));
+ 
+   const users= useSelector(state => state.user);
 if(!users){
   return <LoadingPage/>; 
 }
@@ -28,7 +27,7 @@ if(!users){
           </div>
 
           <div className="profile-details">
-            <div className="profile-picture"><img src={profile} alt='My Image'/></div>
+            <div className="profile-picture"><img src={users.profile} alt='My Image'/></div>
             <div className="profile-name">{users.fullname}</div>
             <div className="profile-email">{users.email}</div>
             <div className="profile-info">
@@ -40,17 +39,17 @@ if(!users){
                 <div className="content">
                   <ul>
                     <h6>About</h6>
-                    <li>Tony Mwangi Mugi</li>
-                    <li>Kustoma24 Admin</li>
+                    <li>{users.fullname}</li>
+                    <li>{users.roles}</li>
                   </ul>
                   <ul>
                     <h6>Contacts</h6>
-                    <li>tonymugi074@gmail.com</li>
-                    <li>+254 700748919</li>
+                    <li>{users.email}</li>
+                    <li>+254 700748956</li>
                   </ul>
                   <ul>
-                    <h6>Address</h6>
-                    <li>Thika, <address>2106-01000</address></li>
+                    <h6>Department</h6>
+                    <li>{users.department}</li>
                   </ul>
                 </div>
               </div>

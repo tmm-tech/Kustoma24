@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Navigation from '../../Components/Navigation/Navigation';
 import './profile_settings.css';
-import user from '../../Assets/img.jpg';
+// import user from '../../Assets/img.jpg';
 import { FaPencilAlt, FaUsers, FaTrashAlt } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 function ProfileSettings() {
-
+ 
+  const users= useSelector(state => state.user);
   const [passwordError, setPasswordError] = useState("");
   const [passwordStrength, setPasswordStrength] = useState(0);
   const [image, setImage] = useState(null);
@@ -120,7 +122,7 @@ function ProfileSettings() {
                       {image ? (
                         <img src={image} alt="profile" />
                       ) : (
-                        <img src={user} alt="profile" />
+                        <img src={users.profile} alt="profile" />
                       )}
                       <div className="camera-icon">
                         <label htmlFor="file-input">
@@ -140,22 +142,30 @@ function ProfileSettings() {
                 </div>
                 <div className="wrap_input">
                   <label htmlFor="full_name">Name</label>
-                  <input type="text" name="full_name" value={formdata.full_name} onChange={handleInputChange} />
+                  <input type="text" name="full_name" value={users.fullname} onChange={handleInputChange} />
                 </div>
                 <div className="wrap_input">
                   <label htmlFor="email">Email</label>
-                  <input type="email" id="email" value={formdata.email} onChange={handleInputChange} />
+                  <input type="email" id="email" value={users.email} onChange={handleInputChange} />
                 </div>
                 <div className="wrap_input">
-                  <label htmlFor="phone_number">Phone</label>
-                  <input type="tel" id="phone_number" value={formdata.phone_number} onChange={handleInputChange} />
+                  <label htmlFor="gender">Gender</label>
+                  <input type="text" id="gender" value={users.gender} onChange={handleInputChange} />
+                </div>
+                <div className="wrap_input">
+                  <label htmlFor="department">Department</label>
+                  <input type="text" id="department" value={users.department} onChange={handleInputChange} />
+                </div>
+                <div className="wrap_input">
+                  <label htmlFor="role">Role</label>
+                  <input type="text" id="role" value={users.roles} onChange={handleInputChange} />
                 </div>
                 <div className="wrap_input">
                   <label htmlFor="oldPassword">Current Password</label>
                   <input
                     type="password"
                     name="oldPassword"
-                    value={formdata.oldPassword}
+                    value={users.password}
                     onChange={handleInputChange}
                   />
                 </div>

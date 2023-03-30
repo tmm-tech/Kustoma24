@@ -34,6 +34,7 @@ function RegisterForm() {
       uploadBytes(imageRef,selectedImage).then (()=>{
         console.log('Uploaded')
         getDownloadURL(imageRef).then((url)=>{
+          console.log(url)
           setFormData({
             ...formData, [event.target.name]: event.target.value, profile:url
           });
@@ -145,7 +146,7 @@ function RegisterForm() {
       setFormError(prevState => ({ ...prevState, confirmpassword: 'Please confirm your password' }));
       inputRefs.current[5].classList.add('alert-validate');
       return false;
-    } else if (confirmpassword !== formData.passwords) {
+    } else if (confirmpassword !== formData.password) {
       setFormError(prevState => ({ ...prevState, confirmpassword: 'Passwords do not match' }));
       inputRefs.current[5].classList.add('alert-validate');
       return false;
@@ -168,12 +169,13 @@ function RegisterForm() {
     const isValidFullName = validateFullName(formData.fullname);
     const isValidGender = validateGender(formData.gender);
     const isValidEmail = validateEmail(formData.email);
-    const isValidPassword = validatePassword(formData.passwords);
+    const isValidPassword = validatePassword(formData.password);
     const isValidConfirmPassword = validateConfirmPassword(formData.confirmpassword);
-    const isValidRole = validateRole(formData.role);
-    const isValidDepartment = validateDepartment(formData.dept);
+    const isValidRole = validateRole(formData.roles);
+    const isValidDepartment = validateDepartment(formData.department);
     if (isValidFullName && isValidGender && isValidEmail && isValidPassword && isValidConfirmPassword && isValidRole && isValidDepartment) {
       // submit login data
+      console.log(formData)
       try {
         const response = await fetch("http://localhost:4040/users/register", {
           method: "POST",
@@ -200,7 +202,7 @@ function RegisterForm() {
       setImage(null);
       window.location.href="/login";
     }else{
-      alert('Invalid Input');
+      alert('Error proceeding with registration');
     }
   }catch(error){
     alert(`Registration failed! ${error}`);

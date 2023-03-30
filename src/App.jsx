@@ -18,16 +18,16 @@ import Reports from './Pages/Report/Report';
 import {useSelector} from 'react-redux';
 function App() {
  const isLoggedIn = useSelector(state => state.isLoggedIn);
-
+console.log(isLoggedIn)
   return (
     <div className="App">
       <Routes>
-        {!isLoggedIn &&
+        {!isLoggedIn && (
           <>
-            <Route path="*" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </>
-        }
+        )}
         {isLoggedIn && (
           <>
             <Route path="/" element={<Dashboard />} />
@@ -39,8 +39,9 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/add-customer" element={<AddCustomer />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/login" element={<Login/>}/>
             <Route path="/profile" element={<Profile />} />
-            <Route path="/profile/settings" element={<ProfileSettings />} />
+            <Route path="/profile setting" element={<ProfileSettings />} />
           </>
         )}
         <Route path="*" element={<Error404 />} />

@@ -1,22 +1,28 @@
 export const login = ({ email, passwords }) => {
     return (dispatch) => {
-        fetch('http://localhost:4040/users/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, passwords }),
-            })
-            .then((response) => response.json())
-            .then((data) => {
-                dispatch({
-                        type: 'LOGIN_SUCCESS',
-                        payload: { user: data.data, token: data.bearer }
-                    })
-                    .catch((error) => {
-                        dispatch({ type: 'LOGIN_ERROR', payload: error });
-                    });
-            });
+
+        try {
+            console.log("Success Login")
+            fetch('http://localhost:4040/users/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, passwords }),
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    dispatch({
+                            type: 'LOGIN_SUCCESS',
+                            payload: { user: data.data, token: data.bearer }
+                        })
+                        .catch((error) => {
+                            dispatch({ type: 'LOGIN_ERROR', payload: error });
+                        });
+                });
+        } catch (error) {
+            console.log(`My Error this time ${error}`);
+        }
     };
 };
 export const logout = () => {

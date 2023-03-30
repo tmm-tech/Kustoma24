@@ -70,7 +70,7 @@ function LoginForm() {
     }
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     const isEmailValid = validateEmail(formData.email);
@@ -79,9 +79,9 @@ function LoginForm() {
       const { email, passwords } = formData;
       // submit login data
       setloading(true);
-      dispatch(login(email,passwords))
-
-      window.location.href='/'
+        console.log(`${email}, ${passwords}`)
+      dispatch(login({email, passwords}))
+      setLoginSuccess(true);
     } else {
       setloading(false);
       alert('Login not successful, Try again!');
