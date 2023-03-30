@@ -20,8 +20,8 @@ function CustomerTable({ customer }) {
         {top5customers.map((customer, index) => (
           <tr key={customer.id}>
             <td>
-              <img className="user" src={customer.image} alt={customer.name} />
-              <span className="name">{customer.name}</span></td>
+              <img className="user" src={customer.profile} alt={customer.fullname} />
+              <span className="name">{customer.fullname}</span></td>
             <td><span className="email">{customer.email}</span></td>
             <td><span className="points">{customer.loyalty_points} Points</span>
               {index === 0 && <FaMedal className="gold-medal" />}

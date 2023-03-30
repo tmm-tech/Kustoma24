@@ -1,12 +1,18 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './main.css';
 import './utils.css';
 import { FaFacebook, FaGoogle, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import LoadingPage from '../Loading/LoadingPage';
+import { useDispatch } from 'react-redux';
+import { login } from '../Redux/userActions';
 function LoginForm() {
   const inputRefs = useRef([]);
+  const [loginSuccess, setLoginSuccess] = useState(false);
+  const [loading, setloading] = useState(false);
+  const dispatch = useDispatch();
   let valid;
   const handleBlur = (index) => (event) => {
     const inputValue = event.target.value.trim();
@@ -66,23 +72,20 @@ function LoginForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     const isEmailValid = validateEmail(formData.email);
     const isPasswordValid = validatePassword(formData.passwords);
     if (isEmailValid && isPasswordValid) {
-          // submit registration data
-          let users = JSON.parse(localStorage.getItem('users')) || [];
-          const user=users.find(user=>user.email === formData.email && user.passwords === formData.passwords);
-          if (user){
-            
-            alert('Login successfully');
-            window.location.href="/";
-          }else{
-            alert('Invalid email or password');
-          }
-         
-        } else {
-          alert('Login not successful, Try again!');
-        }
+      const { email, passwords } = formData;
+      // submit login data
+      setloading(true);
+      dispatch(login(email,passwords))
+
+      window.location.href='/'
+    } else {
+      setloading(false);
+      alert('Login not successful, Try again!');
+    }
   };
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -101,7 +104,7 @@ function LoginForm() {
         <span className="label-input100">Email</span>
       </div>
       <div className={`wrap-input100 validate-input ${passwordError ? 'alert-validate' : 'has-valid-input'}`} data-validate={passwordError}>
-        <input type="password" name="passwords" style={{width:'100%'}} className="input100" onChange={handleChange} value={formData.passwords} ref={(el) => (inputRefs.current[1] = el)} onBlur={handleBlur(1)} />
+        <input type="password" name="passwords" style={{ width: '100%' }} className="input100" onChange={handleChange} value={formData.passwords} ref={(el) => (inputRefs.current[1] = el)} onBlur={handleBlur(1)} />
         <span className="focus-input100"></span>
         <span className="label-input100">Password</span>
       </div>
@@ -110,9 +113,7 @@ function LoginForm() {
           <input type="checkbox" name="remember-me" id="ckb1" className='input-checkbox100' />
           <label htmlFor="ckb1" className="label-checkbox100">Remember me</label>
         </div>
-        <div>
         <a href=" " className="txt1">Forgot Password?</a>
-        </div>
       </div>
       <div className="container-login100-form-btn">
         <button className='login100-form-btn'>Login</button>
@@ -134,6 +135,8 @@ function LoginForm() {
         </a>
       </div>
       <p className='create-account-text'>Don't have an account? <Link to='/register'><span className='create-account-btn'>Create an Account </span></Link></p>
+      {loginSuccess && <p className='login-success'>Login Successful!</p>}
+      {loading && <LoadingPage />}
     </form>
   )
 }

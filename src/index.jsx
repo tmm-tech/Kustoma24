@@ -7,6 +7,12 @@ import Error403 from './Pages/Error Page/403';
 import Error404 from './Pages/Error Page/404';
 import Error500 from './Pages/Error Page/500';
 import Error503 from './Pages/Error Page/503';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import userReducer from './Components/Redux/userReducer';
+
+
+const store = createStore(userReducer);
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -56,10 +62,12 @@ class ErrorBoundary extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
    <Router>
       <ErrorBoundary>
         <App/>
       </ErrorBoundary>
     </Router>
+    </Provider>
   </React.StrictMode>
 );

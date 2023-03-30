@@ -21,11 +21,11 @@
 
 .right-side {
     width: 50%;
-    height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
     overflow-y: hidden;
+    border:none;
     display: flex;
     border: none;
     justify-content: center;

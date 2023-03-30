@@ -17,11 +17,18 @@ a {
     height: 100%;
     border: none;
     overflow: hidden;
-    margin-top: -20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login-success {
+    background-color: #d4edda;
+    color: #2A3F54;
+    border: 1px solid #546b81;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
 a:focus {

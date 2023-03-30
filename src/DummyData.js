@@ -1,5 +1,5 @@
 export const user = [{
-        "id": 1001,
+
         "name": "Alice Johnson",
         "image": "https://randomuser.me/api/portraits/women/1.jpg",
         "email": "alice.johnson@example.com",
@@ -8,7 +8,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1002,
+
         "name": "Bob Smith",
         "image": "https://randomuser.me/api/portraits/men/2.jpg",
         "email": "bob.smith@example.com",
@@ -17,7 +17,7 @@ export const user = [{
         "status": "inactive"
     },
     {
-        "id": 1003,
+
         "name": "Charlie Brown",
         "image": "https://randomuser.me/api/portraits/men/3.jpg",
         "email": "charlie.brown@example.com",
@@ -26,7 +26,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1004,
+
         "name": "Diana Williams",
         "image": "https://randomuser.me/api/portraits/women/4.jpg",
         "email": "diana.williams@example.com",
@@ -35,7 +35,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1005,
+
         "name": "Edward Davis",
         "image": "https://randomuser.me/api/portraits/men/5.jpg",
         "email": "edward.davis@example.com",
@@ -44,7 +44,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1006,
+
         "name": "Fiona Lee",
         "image": "https://randomuser.me/api/portraits/women/6.jpg",
         "email": "fiona.lee@example.com",
@@ -53,7 +53,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1007,
+
         "name": "George Thompson",
         "image": "https://randomuser.me/api/portraits/men/7.jpg",
         "email": "george.thompson@example.com",
@@ -62,7 +62,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1008,
+
         "name": "Helen Anderson",
         "image": "https://randomuser.me/api/portraits/women/8.jpg",
         "email": "helen.anderson@example.com",
@@ -71,7 +71,7 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1009,
+
         "name": "Ian Roberts",
         "image": "https://randomuser.me/api/portraits/men/9.jpg",
         "email": "ian.roberts@example.com",
@@ -80,360 +80,358 @@ export const user = [{
         "status": "active"
     },
     {
-        "id": 1010,
+
         "name": "Alice Johnson",
-        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "image": "https://randomuser.me/api/portraits/women/10.jpg",
         "email": "alice.johnson@example.com",
         "loyalty_points": 1200,
         "registered_at": "2022-02-15",
         "status": "active"
     },
     {
-        "id": 1011,
         "name": "Bob Smith",
-        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "image": "https://randomuser.me/api/portraits/men/11.jpg",
         "email": "bob.smith@example.com",
         "loyalty_points": 800,
         "registered_at": "2022-01-20",
         "status": "active"
     },
     {
-        "id": 1012,
+
         "name": "Charlie Brown",
-        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "image": "https://randomuser.me/api/portraits/men/12.jpg",
         "email": "charlie.brown@example.com",
         "loyalty_points": 500,
         "registered_at": "2022-03-01",
         "status": "active"
     },
     {
-        "id": 1013,
+
         "name": "Diana Williams",
-        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "image": "https://randomuser.me/api/portraits/women/13.jpg",
         "email": "diana.williams@example.com",
         "loyalty_points": 1400,
         "registered_at": "2021-12-10",
         "status": "active"
     },
     {
-        "id": 1014,
+
         "name": "Edward Davis",
-        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "image": "https://randomuser.me/api/portraits/men/14.jpg",
         "email": "edward.davis@example.com",
         "loyalty_points": 200,
         "registered_at": "2022-02-05",
         "status": "active"
     },
     {
-        "id": 1015,
+
         "name": "Fiona Lee",
-        "image": "https://randomuser.me/api/portraits/women/6.jpg",
+        "image": "https://randomuser.me/api/portraits/women/15.jpg",
         "email": "fiona.lee@example.com",
         "loyalty_points": 900,
         "registered_at": "2022-01-15",
         "status": "active"
     },
     {
-        "id": 1016,
+
         "name": "George Thompson",
-        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "image": "https://randomuser.me/api/portraits/men/16.jpg",
         "email": "george.thompson@example.com",
         "loyalty_points": 600,
         "registered_at": "2022-02-10",
         "status": "active"
     },
     {
-        "id": 1017,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/17.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "inactive"
     },
     {
-        "id": 1018,
+
         "name": "Ian Roberts",
-        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "image": "https://randomuser.me/api/portraits/men/18.jpg",
         "email": "ian.roberts@example.com",
         "loyalty_points": 1100,
         "registered_at": "2022-01-25",
         "status": "active"
     },
     {
-        "id": 1019,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/19.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "active"
     },
     {
-        "id": 1021,
+
         "name": "Alice Johnson",
-        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "image": "https://randomuser.me/api/portraits/women/20.jpg",
         "email": "alice.johnson@example.com",
         "loyalty_points": 1200,
         "registered_at": "2022-02-15",
         "status": "active"
     },
     {
-        "id": 1022,
+
         "name": "Bob Smith",
-        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "image": "https://randomuser.me/api/portraits/men/21.jpg",
         "email": "bob.smith@example.com",
         "loyalty_points": 800,
         "registered_at": "2022-01-20",
         "status": "active"
     },
     {
-        "id": 1023,
+
         "name": "Charlie Brown",
-        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "image": "https://randomuser.me/api/portraits/men/22.jpg",
         "email": "charlie.brown@example.com",
         "loyalty_points": 500,
         "registered_at": "2022-03-01",
         "status": "active"
     },
     {
-        "id": 1024,
+
         "name": "Diana Williams",
-        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "image": "https://randomuser.me/api/portraits/women/23.jpg",
         "email": "diana.williams@example.com",
         "loyalty_points": 1400,
         "registered_at": "2021-12-10",
         "status": "active"
     },
     {
-        "id": 1025,
+
         "name": "Edward Davis",
-        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "image": "https://randomuser.me/api/portraits/men/24.jpg",
         "email": "edward.davis@example.com",
         "loyalty_points": 200,
         "registered_at": "2022-02-05",
         "status": "inactive"
     },
     {
-        "id": 1026,
+
         "name": "Fiona Lee",
-        "image": "https://randomuser.me/api/portraits/women/6.jpg",
+        "image": "https://randomuser.me/api/portraits/women/25.jpg",
         "email": "fiona.lee@example.com",
         "loyalty_points": 900,
         "registered_at": "2022-01-15",
         "status": "active"
     },
     {
-        "id": 1027,
+
         "name": "George Thompson",
-        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "image": "https://randomuser.me/api/portraits/men/26.jpg",
         "email": "george.thompson@example.com",
         "loyalty_points": 600,
         "registered_at": "2022-02-10",
         "status": "active"
     },
     {
-        "id": 1028,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/27.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "active"
     },
     {
-        "id": 1029,
+
         "name": "Ian Roberts",
-        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "image": "https://randomuser.me/api/portraits/men/28.jpg",
         "email": "ian.roberts@example.com",
         "loyalty_points": 1100,
         "registered_at": "2022-01-25",
         "status": "active"
     },
     {
-        "id": 1030,
+
         "name": "Alice Johnson",
-        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "image": "https://randomuser.me/api/portraits/women/29.jpg",
         "email": "alice.johnson@example.com",
         "loyalty_points": 1200,
         "registered_at": "2022-02-15",
         "status": "active"
     },
     {
-        "id": 1031,
+
         "name": "Bob Smith",
-        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "image": "https://randomuser.me/api/portraits/men/30.jpg",
         "email": "bob.smith@example.com",
         "loyalty_points": 800,
         "registered_at": "2022-01-20",
         "status": "active"
     },
     {
-        "id": 1032,
+
         "name": "Charlie Brown",
-        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "image": "https://randomuser.me/api/portraits/men/31.jpg",
         "email": "charlie.brown@example.com",
         "loyalty_points": 500,
         "registered_at": "2022-03-01",
         "status": "active"
     },
     {
-        "id": 1033,
+
         "name": "Diana Williams",
-        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "image": "https://randomuser.me/api/portraits/women/32.jpg",
         "email": "diana.williams@example.com",
         "loyalty_points": 1400,
         "registered_at": "2021-12-10",
         "status": "inactive"
     },
     {
-        "id": 1034,
+
         "name": "Edward Davis",
-        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "image": "https://randomuser.me/api/portraits/men/33.jpg",
         "email": "edward.davis@example.com",
         "loyalty_points": 1600,
         "registered_at": "2022-02-05",
         "status": "active"
     },
     {
-        "id": 1035,
+
         "name": "Fiona Lee",
-        "image": "https://randomuser.me/api/portraits/women/6.jpg",
+        "image": "https://randomuser.me/api/portraits/women/34.jpg",
         "email": "fiona.lee@example.com",
         "loyalty_points": 900,
         "registered_at": "2022-01-15",
         "status": "active"
     },
     {
-        "id": 1036,
+
         "name": "George Thompson",
-        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "image": "https://randomuser.me/api/portraits/men/35.jpg",
         "email": "george.thompson@example.com",
         "loyalty_points": 2100,
         "registered_at": "2022-02-10",
         "status": "active"
     },
     {
-        "id": 1037,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/36.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "inactive"
     },
     {
-        "id": 1038,
+
         "name": "Ian Roberts",
-        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "image": "https://randomuser.me/api/portraits/men/37.jpg",
         "email": "ian.roberts@example.com",
         "loyalty_points": 1100,
         "registered_at": "2022-01-25",
         "status": "active"
     },
     {
-        "id": 1039,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/38.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "active"
     },
     {
-        "id": 1040,
+
         "name": "Helen Anderson",
-        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "image": "https://randomuser.me/api/portraits/women/39.jpg",
         "email": "helen.anderson@example.com",
         "loyalty_points": 300,
         "registered_at": "2022-03-05",
         "status": "active"
     },
     {
-        "id": 1041,
+
         "name": "George Thompson",
-        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "image": "https://randomuser.me/api/portraits/men/40.jpg",
         "email": "george.thompson@example.com",
         "loyalty_points": 600,
         "registered_at": "2022-02-10",
         "status": "inactive"
     },
     {
-        "id": 1042,
+
         "name": "Kelly Nguyen",
-        "image": "https://randomuser.me/api/portraits/women/11.jpg",
+        "image": "https://randomuser.me/api/portraits/women/41.jpg",
         "email": "kelly.nguyen@example.com",
         "loyalty_points": 700,
         "registered_at": "2022-02-18",
         "status": "active"
     },
     {
-        "id": 1043,
+
         "name": "Liam Garcia",
-        "image": "https://randomuser.me/api/portraits/men/12.jpg",
+        "image": "https://randomuser.me/api/portraits/men/42.jpg",
         "email": "liam.garcia@example.com",
         "loyalty_points": 1500,
         "registered_at": "2022-03-10",
         "status": "active"
     },
     {
-        "id": 1044,
         "name": "Mia Scott",
-        "image": "https://randomuser.me/api/portraits/women/13.jpg",
+        "image": "https://randomuser.me/api/portraits/women/43.jpg",
         "email": "mia.scott@example.com",
         "loyalty_points": 1000,
         "registered_at": "2022-02-25",
         "status": "active"
     },
     {
-        "id": 1045,
+
         "name": "Nathan Rodriguez",
-        "image": "https://randomuser.me/api/portraits/men/14.jpg",
+        "image": "https://randomuser.me/api/portraits/men/44.jpg",
         "email": "nathan.rodriguez@example.com",
         "loyalty_points": 400,
         "registered_at": "2022-01-30",
         "status": "active"
     },
     {
-        "id": 1046,
+
         "name": "Olivia Wilson",
-        "image": "https://randomuser.me/api/portraits/women/15.jpg",
+        "image": "https://randomuser.me/api/portraits/women/45.jpg",
         "email": "olivia.wilson@example.com",
         "loyalty_points": 900,
         "registered_at": "2022-02-22",
         "status": "active"
     },
     {
-        "id": 1047,
+
         "name": "Peter Lee",
-        "image": "https://randomuser.me/api/portraits/men/16.jpg",
+        "image": "https://randomuser.me/api/portraits/men/46.jpg",
         "email": "peter.lee@example.com",
         "loyalty_points": 2000,
         "registered_at": "2022-01-10",
         "status": "active"
     },
     {
-        "id": 1048,
+
         "name": "Queenie Kim",
-        "image": "https://randomuser.me/api/portraits/women/17.jpg",
+        "image": "https://randomuser.me/api/portraits/women/47.jpg",
         "email": "queenie.kim@example.com",
         "loyalty_points": 800,
         "registered_at": "2022-03-05",
         "status": "active"
     },
     {
-        "id": 1049,
+
         "name": "Robert Wright",
-        "image": "https://randomuser.me/api/portraits/men/18.jpg",
+        "image": "https://randomuser.me/api/portraits/men/48.jpg",
         "email": "robert.wright@example.com",
         "loyalty_points": 1200,
         "registered_at": "2022-02-12",
         "status": "active"
     },
     {
-        "id": 1050,
+
         "name": "Sarah Taylor",
-        "image": "https://randomuser.me/api/portraits/women/19.jpg",
+        "image": "https://randomuser.me/api/portraits/women/49.jpg",
         "email": "sarah.taylor@example.com",
         "loyalty_points": 600,
         "registered_at": "2022-03-01",
@@ -740,8 +738,7 @@ export const products = [{
 export const sales = [{
         "id": 1,
         "date": "2023-03-17",
-        "product_name": "Fjallraven - Foldsack No. 1 Backpack",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": 1,
         "customer_id": 1047,
         "price": 109.95,
         "discount": 0.1,
@@ -753,8 +750,7 @@ export const sales = [{
     {
         "id": 2,
         "date": "2023-03-10",
-        "product_name": "Mens Cotton Jacket",
-        "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "product_id": 6,
         "customer_id": 1043,
         "price": 55.99,
         "discount": 0.05,
@@ -766,8 +762,7 @@ export const sales = [{
     {
         "id": 3,
         "date": "2023-03-10",
-        "product_name": "Mens Cotton Jacket",
-        "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "product_id": 1,
         "customer_id": 1043,
         "price": 55.99,
         "discount": 0.05,
@@ -779,8 +774,7 @@ export const sales = [{
     {
         "id": 4,
         "date": "2023-03-09",
-        "product_name": "Mens Slim Fit T-Shirt",
-        "product_image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+        "product_id": 10,
         "customer_id": 1030,
         "price": 7.99,
         "discount": 0.15,
@@ -792,8 +786,7 @@ export const sales = [{
     {
         "id": 5,
         "date": "2023-02-22",
-        "product_name": "Levi's Men's 511 Slim Fit Jeans",
-        "product_image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "product_id": 7,
         "customer_id": 1050,
         "price": 64.9,
         "discount": 0.3,
@@ -804,8 +797,7 @@ export const sales = [{
     }, {
         "id": 6,
         "date": "2023-02-15",
-        "product_name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": 8,
         "customer_id": 1003,
         "price": 109.95,
         "discount": 0.2,
@@ -817,8 +809,7 @@ export const sales = [{
     {
         "id": 7,
         "date": "2023-02-10",
-        "product_name": "Mens Casual Premium Slim Fit T-Shirts ",
-        "product_image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "product_id": 9,
         "customer_id": 1019,
         "price": 22.3,
         "discount": 0.1,
@@ -830,8 +821,7 @@ export const sales = [{
     {
         "id": 8,
         "date": "2023-02-08",
-        "product_name": "Mens Cotton Jacket",
-        "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "product_id": 11,
         "customer_id": 1045,
         "price": 55.99,
         "discount": 0.25,
@@ -843,8 +833,7 @@ export const sales = [{
     {
         "id": 9,
         "date": "2023-02-05",
-        "product_name": "Solid Pattern Necktie Set",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Solid Pattern Necktie Set",
         "customer_id": 1024,
         "price": 12.99,
         "discount": 0,
@@ -856,8 +845,7 @@ export const sales = [{
     {
         "id": 10,
         "date": "2023-01-30",
-        "product_name": "Bose SoundLink Bluetooth Speaker III",
-        "product_image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UL640_QL65_ML3_.jpg",
+        "product_id": 8,
         "customer_id": 1001,
         "price": 269.99,
         "discount": 0.15,
@@ -868,8 +856,7 @@ export const sales = [{
     }, {
         "id": 11,
         "date": "2023-01-25",
-        "product_name": "Fjallraven Backpack",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Fjallraven Backpack",
         "customer_id": 1012,
         "price": 109.95,
         "discount": 10,
@@ -881,7 +868,7 @@ export const sales = [{
     {
         "id": 12,
         "date": "2023-01-20",
-        "product_name": "Apple Airpods",
+        "product_id": "Apple Airpods",
         "product_image": "https://fakestoreapi.com/img/71MkMwFwjlL._AC_UL640_QL65_ML3_.jpg",
         "customer_id": 1030,
         "price": 149,
@@ -894,7 +881,7 @@ export const sales = [{
     {
         "id": 13,
         "date": "2023-01-15",
-        "product_name": "Samsung Galaxy S21 Ultra",
+        "product_id": "Samsung Galaxy S21 Ultra",
         "product_image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
         "customer_id": 1009,
         "price": 1199,
@@ -907,7 +894,7 @@ export const sales = [{
     {
         "id": 14,
         "date": "2023-01-10",
-        "product_name": "Women's Fleece Pullover Hoodie",
+        "product_id": "Women's Fleece Pullover Hoodie",
         "product_image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
         "customer_id": 1047,
         "price": 27.99,
@@ -920,7 +907,7 @@ export const sales = [{
     {
         "id": 15,
         "date": "2023-01-05",
-        "product_name": "Nike Men's Running Shoes",
+        "product_id": "Nike Men's Running Shoes",
         "product_image": "https://fakestoreapi.com/img/81ZPKK11NML._AC_UY879_.jpg",
         "customer_id": 1020,
         "price": 99.99,
@@ -933,7 +920,7 @@ export const sales = [{
     {
         "id": 16,
         "date": "2022-12-25",
-        "product_name": "Sony Playstation 5",
+        "product_id": "Sony Playstation 5",
         "product_image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
         "customer_id": 1050,
         "price": 499,
@@ -946,7 +933,7 @@ export const sales = [{
     {
         "id": 17,
         "date": "2022-12-15",
-        "product_name": "Cotton Blend T-Shirt",
+        "product_id": "Cotton Blend T-Shirt",
         "product_image": "https://fakestoreapi.com/img/71-3WzVXN5L._AC_UY879_.jpg",
         "customer_id": 1011,
         "price": 12.99,
@@ -959,7 +946,7 @@ export const sales = [{
     {
         "id": 18,
         "date": "2022-12-10",
-        "product_name": "Dell Inspiron Laptop",
+        "product_id": "Dell Inspiron Laptop",
         "product_image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
         "customer_id": 1035,
         "price": 779,
@@ -972,8 +959,7 @@ export const sales = [{
     {
         "id": 19,
         "date": "2023-03-18",
-        "product_name": "Fjallraven - Foldsack No. 1 Backpack",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Fjallraven - Foldsack No. 1 Backpack",
         "customer_id": 1047,
         "price": 109.95,
         "discount": 0.1,
@@ -985,7 +971,7 @@ export const sales = [{
     {
         "id": 20,
         "date": "2023-03-18",
-        "product_name": "Mens Cotton Jacket",
+        "product_id": "Mens Cotton Jacket",
         "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         "customer_id": 1043,
         "price": 55.99,
@@ -998,7 +984,7 @@ export const sales = [{
     {
         "id": 21,
         "date": "2023-03-19",
-        "product_name": "Mens Cotton Jacket",
+        "product_id": "Mens Cotton Jacket",
         "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         "customer_id": 1043,
         "price": 55.99,
@@ -1011,7 +997,7 @@ export const sales = [{
     {
         "id": 22,
         "date": "2023-03-20",
-        "product_name": "Mens Slim Fit T-Shirt",
+        "product_id": "Mens Slim Fit T-Shirt",
         "product_image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
         "customer_id": 1030,
         "price": 7.99,
@@ -1024,7 +1010,7 @@ export const sales = [{
     {
         "id": 23,
         "date": "2023-02-19",
-        "product_name": "Levi's Men's 511 Slim Fit Jeans",
+        "product_id": "Levi's Men's 511 Slim Fit Jeans",
         "product_image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
         "customer_id": 1050,
         "price": 64.9,
@@ -1036,8 +1022,7 @@ export const sales = [{
     }, {
         "id": 24,
         "date": "2023-03-21",
-        "product_name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
         "customer_id": 1003,
         "price": 109.95,
         "discount": 0.2,
@@ -1049,7 +1034,7 @@ export const sales = [{
     {
         "id": 25,
         "date": "2023-02-11",
-        "product_name": "Mens Casual Premium Slim Fit T-Shirts ",
+        "product_id": "Mens Casual Premium Slim Fit T-Shirts ",
         "product_image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
         "customer_id": 1019,
         "price": 22.3,
@@ -1062,7 +1047,7 @@ export const sales = [{
     {
         "id": 26,
         "date": "2023-02-08",
-        "product_name": "Mens Cotton Jacket",
+        "product_id": "Mens Cotton Jacket",
         "product_image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         "customer_id": 1045,
         "price": 55.99,
@@ -1075,8 +1060,7 @@ export const sales = [{
     {
         "id": 27,
         "date": "2023-02-05",
-        "product_name": "Solid Pattern Necktie Set",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Solid Pattern Necktie Set",
         "customer_id": 1024,
         "price": 12.99,
         "discount": 0,
@@ -1088,7 +1072,7 @@ export const sales = [{
     {
         "id": 28,
         "date": "2023-01-30",
-        "product_name": "Bose SoundLink Bluetooth Speaker III",
+        "product_id": "Bose SoundLink Bluetooth Speaker III",
         "product_image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UL640_QL65_ML3_.jpg",
         "customer_id": 1001,
         "price": 269.99,
@@ -1100,8 +1084,7 @@ export const sales = [{
     }, {
         "id": 29,
         "date": "2023-01-25",
-        "product_name": "Fjallraven Backpack",
-        "product_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "product_id": "Fjallraven Backpack",
         "customer_id": 1012,
         "price": 109.95,
         "discount": 10,
@@ -1113,7 +1096,7 @@ export const sales = [{
     {
         "id": 30,
         "date": "2023-01-20",
-        "product_name": "Apple Airpods",
+        "product_id": "Apple Airpods",
         "product_image": "https://fakestoreapi.com/img/71MkMwFwjlL._AC_UL640_QL65_ML3_.jpg",
         "customer_id": 1030,
         "price": 149,
@@ -1126,7 +1109,7 @@ export const sales = [{
     {
         "id": 34,
         "date": "2023-01-15",
-        "product_name": "Samsung Galaxy S21 Ultra",
+        "product_id": "Samsung Galaxy S21 Ultra",
         "product_image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
         "customer_id": 1009,
         "price": 1199,
@@ -1139,7 +1122,7 @@ export const sales = [{
     {
         "id": 35,
         "date": "2023-01-10",
-        "product_name": "Women's Fleece Pullover Hoodie",
+        "product_id": "Women's Fleece Pullover Hoodie",
         "product_image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
         "customer_id": 1047,
         "price": 27.99,
@@ -1152,7 +1135,7 @@ export const sales = [{
     {
         "id": 36,
         "date": "2023-01-05",
-        "product_name": "Nike Men's Running Shoes",
+        "product_id": "Nike Men's Running Shoes",
         "product_image": "https://fakestoreapi.com/img/81ZPKK11NML._AC_UY879_.jpg",
         "customer_id": 1020,
         "price": 99.99,
@@ -1165,7 +1148,7 @@ export const sales = [{
     {
         "id": 37,
         "date": "2022-12-25",
-        "product_name": "Sony Playstation 5",
+        "product_id": "Sony Playstation 5",
         "product_image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
         "customer_id": 1050,
         "price": 499,
@@ -1178,7 +1161,7 @@ export const sales = [{
     {
         "id": 38,
         "date": "2022-12-15",
-        "product_name": "Cotton Blend T-Shirt",
+        "product_id": "Cotton Blend T-Shirt",
         "product_image": "https://fakestoreapi.com/img/71-3WzVXN5L._AC_UY879_.jpg",
         "customer_id": 1011,
         "price": 12.99,
@@ -1191,7 +1174,7 @@ export const sales = [{
     {
         "id": 39,
         "date": "2022-12-10",
-        "product_name": "Dell Inspiron Laptop",
+        "product_id": "Dell Inspiron Laptop",
         "product_image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
         "customer_id": 1035,
         "price": 779,
@@ -1205,23 +1188,68 @@ export const sales = [{
 ];
 
 export const categories = [{
-        "id": 1,
-        "category": "electronics",
-        "date": "2022-12-10",
-    },
-    {
-        "id": 2,
-        "category": "jewelery",
-        "date": "2022-12-01",
-    },
-    {
-        "id": 3,
-        "category": "men's clothing",
-        "date": "2022-11-20",
-    },
-    {
-        "id": 4,
-        "category": "women's clothing",
-        "date": "2022-10-10",
-    },
-]
+            "id": 1,
+            "category": "electronics",
+            "date": "2022-12-10",
+        },
+        {
+            "id": 2,
+            "category": "jewelery",
+            "date": "2022-12-01",
+        },
+        {
+            "id": 3,
+            "category": "men's clothing",
+            "date": "2022-11-20",
+        },
+        {
+            "id": 4,
+            "category": "women's clothing",
+            "date": "2022-10-10",
+        },
+    ]
+    // "category": "women's clothing",
+    // "date": "2022-10-10",
+    // },
+    // ]
+
+
+// {
+//         "fullname": "Helen Anderson",
+//         "email": "helen.anderson@example.com",
+//         "profile": "https://randomuser.me/api/portraits/women/17.jpg",
+//         "password": "password17@",
+//         "confirmpassword":"password17@"
+//         "gender": "female",
+//         "loyalty_points": 0,
+//         "phonenumber": "0700748919",
+//         "country": "Kenya",
+//         "DOB": "1995-01-01T00:00:00.000Z",
+// }
+
+// user
+// {
+//     "fullname": "Helen Anderson",
+//     "email": "helen.anderson@example.com",
+//     "profile": "https://randomuser.me/api/portraits/women/19.jpg",
+//     "password": "password17@",
+//     "confirmpassword":"password17@"
+//     "gender": "female",
+//     "department": "Accounting",
+//     "roles": "Staff"
+// }
+
+// {
+//     "email": "helen.anderson@example.com",
+//     "password": "password17@",
+// }
+
+// {
+//     "title": "Mens Cotton Jacket",
+//     "price": 55.99,
+//     "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+//     "category_id": 4,
+//     "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+//     "rate": 4.7,
+//     "count": 500
+//   }
