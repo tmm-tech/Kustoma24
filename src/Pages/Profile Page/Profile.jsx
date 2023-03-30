@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import Navigation from '../../Components/Navigation/Navigation';
 import './profile.css';
 import {Link} from 'react-router-dom'
@@ -7,6 +7,7 @@ import userprofile from '../../Assets/kasper-rasmussen-ecryPq45-_g-unsplash.jpg'
 import profile from '../../Assets/img.jpg';
 import { activities } from '../../DummyData';
 import LoadingPage from '../../Components/Loading/LoadingPage';
+import { useSelector } from 'react-redux';
 function Profile() {
   const [users, setUsers]=useState(null);
    setUsers(useSelector(state => state.user));
