@@ -3,7 +3,7 @@ import { categories } from '../../DummyData';
 import './category.css'
 import { FaFilter } from 'react-icons/fa';
 import Navigation from '../../Components/Navigation/Navigation';
-function AddCategory({onAddCategory}) {
+function AddCategory() {
   const [category, setCategory] = useState({ category: '', date: '' });
   function handleSubmit(e) {
     e.preventDefault();

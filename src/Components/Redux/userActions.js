@@ -29,9 +29,9 @@ export const logout = () => {
     return { type: 'LOGOUT_SUCCESS' };
 };
 
-export const fetchUserDetails = (userId) => {
+export const fetchUserDetails = (email) => {
     return (dispatch) => {
-        fetch(`http://localhost:4040/users/${userId}`)
+        fetch(`http://localhost:4040/users/logout/${email}`)
             .then((response) => response.json())
             .then((userDetails) => {
                 dispatch({

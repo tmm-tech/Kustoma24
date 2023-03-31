@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import { MdDashboard } from 'react-icons/md'
 import user from '../../Assets/img.jpg';
 import logo from '../../Assets/landscape.png'
+import { useSelector } from 'react-redux';
 import './navigation.css';
 function Sidebar() {
     const [isExpanded, setIsExpanded] = useState(false);
+    const users= useSelector(state => state.user);
     const handleToggle = () => {
         setIsExpanded(!isExpanded);
     };
@@ -24,7 +26,7 @@ function Sidebar() {
                 <span className='info-text' style={{ display: isExpanded ? 'none' : 'inline' }}>
                     Welcome
                     <br />
-                    <span className='myname'>Tony Mwangi</span>
+                    <span className='myname'>{users.fullname}</span>
                 </span>
             </div>
             <ul>

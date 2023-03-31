@@ -186,6 +186,7 @@ function RegisterForm() {
         });
         // const data = await response.json();
         if (response.ok) {
+          window.location.href="/";
           // Login successful
           alert('Registration submitted successfully!');
       // clear form data
@@ -200,7 +201,7 @@ function RegisterForm() {
         profile: null
       });
       setImage(null);
-      window.location.href="/login";
+     
     }else{
       alert('Error proceeding with registration');
     }

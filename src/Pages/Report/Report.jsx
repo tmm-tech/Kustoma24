@@ -9,7 +9,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
 function Report() {
-  const [filter, setFilter] = useState('weekly');
+  const [filter, setFilter] = useState('monthly');
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
   useEffect(() => {

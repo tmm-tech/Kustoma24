@@ -33,12 +33,12 @@ console.log(isLoggedIn)
             <Route path="/" element={<Dashboard />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/add-product" element={<AddProduct />} />
+            <Route path="/add product" element={<AddProduct />} />
             <Route path="/categories" element={<Categories />} />
-            <Route path="/add-category" element={<AddCategory />} />
+            <Route path="/add category" element={<AddCategory />} />
             <Route path="/customers" element={<Customers />} />
-            <Route path="/add-customer" element={<AddCustomer />} />
-            <Route path="/reports" element={<Reports />} />
+            <Route path="/add customer" element={<AddCustomer />} />
+            <Route path="/report" element={<Reports />} />
             <Route path="/login" element={<Login/>}/>
             <Route path="/profile" element={<Profile />} />
             <Route path="/profile setting" element={<ProfileSettings />} />

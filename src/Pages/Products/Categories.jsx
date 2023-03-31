@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './category.css';
 import { categories } from '../../DummyData';
 import {BiSort} from 'react-icons/bi';
@@ -10,7 +10,15 @@ function Categories() {
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredData, setFilteredData] = useState(categories);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(5);
+    const [itemsPerPage] = useState(3);
+    useEffect(() => {
+      async function fetchData() {
+        const response = await fetch('http://localhost:4042/categories/category');
+        console.log(response.data)
+        setFilteredData(response.data);
+      }
+      fetchData();
+    }, [filteredData]);
     const handleSearch = (event) => {
       const term = event.target.value;
       setSearchTerm(term);

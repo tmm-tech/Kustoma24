@@ -5,6 +5,7 @@ import './profile.css';
 import {Link} from 'react-router-dom'
 import userprofile from '../../Assets/kasper-rasmussen-ecryPq45-_g-unsplash.jpg'
 import { activities } from '../../DummyData';
+import user from '../../Assets/img.jpg';
 import LoadingPage from '../../Components/Loading/LoadingPage';
 import { useSelector } from 'react-redux';
 function Profile() {
@@ -27,7 +28,7 @@ if(!users){
           </div>
 
           <div className="profile-details">
-            <div className="profile-picture"><img src={users.profile} alt='My Image'/></div>
+            <div className="profile-picture"><img src={user} alt='My Image'/></div>
             <div className="profile-name">{users.fullname}</div>
             <div className="profile-email">{users.email}</div>
             <div className="profile-info">

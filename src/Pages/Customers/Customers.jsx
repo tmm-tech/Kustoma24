@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './customers.css';
-import { user } from '../../DummyData';
+// import { user } from '../../DummyData';
 import { BiSort } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { AiOutlinePlus } from 'react-icons/ai'
+import {user} from '../../DummyData';
 import { FaFilter, FaSearch, FaEdit, FaTrash } from 'react-icons/fa';
 import Navigation from '../../Components/Navigation/Navigation';
 function Customers() {
@@ -11,15 +12,23 @@ function Customers() {
   const [filteredData, setFilteredData] = useState(user);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
-
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('http://localhost:4040/customer/customers');
+      const data = await response.json();
+      console.log(data)
+      setFilteredData(data);
+    }
+    fetchData();
+  }, []);
   const handleSearch = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
 
     if (!term) {
-      setFilteredData(user);
+      setFilteredData(filteredData);
     } else {
-      const filtered = user.filter((customer) =>
+      const filtered = filteredData.filter((customer) =>
         customer.name.toLowerCase().includes(term.toLowerCase()));
       setFilteredData(filtered);
     }

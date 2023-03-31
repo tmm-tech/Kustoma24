@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './sales.css';
 import { AiFillFilePdf} from 'react-icons/ai';
 import {BiSort} from 'react-icons/bi';
@@ -10,6 +10,14 @@ function Sales() {
   const [filteredData, setFilteredData] = useState(sales);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('/api/sales');
+      const data = await response.json();
+      setFilteredData(data);
+    }
+    fetchData();
+  }, []);
   const handleSearch = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
